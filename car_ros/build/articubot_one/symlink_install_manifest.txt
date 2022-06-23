@@ -1,7 +1,10 @@
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/config/empty.yaml
+/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/config/view_bot.rviz
+/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/gazebo_control.xacro
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/inertial_macros.xacro
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/robot.urdf.xacro
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/robot_core.xacro
+/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/launch/rsp.launch.py
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/worlds/empty.world
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one
