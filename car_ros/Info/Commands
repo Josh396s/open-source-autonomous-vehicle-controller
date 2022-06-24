@@ -1,0 +1,11 @@
+#BUILD THE ROBOT---------------------------------------------------------
+#colcon build --symlink-install
+
+#LAUNCH RVIZ
+#rviz2 
+
+#LAUNCH GAZEBO-----------------------------------------------------------
+#ros2 launch articubot_one launch_sim.launch.py
+
+#LAUNCH CONTROL VIA KEYBOARD---------------------------------------------
+#ros2 run teleop_twist_keyboard teleop_twist_keyboard
