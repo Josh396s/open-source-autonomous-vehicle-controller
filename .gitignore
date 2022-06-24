@@ -1,4 +1,3 @@
-*.*
 !*.X
 !*.c
 !*.h
@@ -11,11 +10,9 @@
 !*.xml
 !sym-lib-table
 !*.pretty
-!*.txt
 !*.md
 !*.jpg
 !*.png
-!*.py
 !*.tex
 !*.cls
 !*.clo
