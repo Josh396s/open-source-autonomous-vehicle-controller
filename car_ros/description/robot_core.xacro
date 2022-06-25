@@ -2,8 +2,6 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
     <xacro:include filename="inertial_macros.xacro"/>
-    
-    <xacro:include filename = "summit_base.gazebo.xacro"/>
 
     <material name="white">
         <color rgba="1 1 1 1" />
@@ -56,9 +54,6 @@
         <xacro:inertial_box mass="0.5" x="0.33" y="0.15" z="0.15">
             <origin xyz="0.17 0 0.075" rpy="0 0 0"/>
         </xacro:inertial_box>
-        <xacro:omni_steering>
-        
-        </xacro:omni_steering>
     </link>
 
     <gazebo reference="chassis">
@@ -93,6 +88,8 @@
 
     <gazebo reference="front_left_wheel">
         <material>Gazebo/Blue</material>
+        <mu1 value="0.018"/>
+        <mu2 value="0.018"/>
     </gazebo>
 
 
@@ -155,6 +152,8 @@
 
     <gazebo reference="front_right_wheel">
         <material>Gazebo/Blue</material>
+        <mu1 value="0.018"/>
+        <mu2 value="0.018"/>
     </gazebo>
 
 
