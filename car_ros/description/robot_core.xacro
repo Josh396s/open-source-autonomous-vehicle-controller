@@ -138,7 +138,7 @@
             <geometry>
                 <cylinder radius="0.04" length="0.03"/>
             </geometry>
-            <material name="blue"/>hjnbm
+            <material name="blue"/>
         </visual>
         <collision>
             <geometry>
