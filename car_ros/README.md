@@ -1,7 +1,16 @@
-## Robot Package Template
+All work is done using Ubuntu 20.04
+Must have ROS2 Foxy installed (Reference https://youtu.be/uWzOk0nkTcI)
+Must have Gazebo installed (Reference https://classic.gazebosim.org/tutorials?tut=install_ubuntu)
 
-This is a GitHub template. You can make your own copy by clicking the green "Use this template" button.
+Steps:
+1) Input the command "source install/setup.bash" in order to make the robot discoverable (Must be done for every terminal tab)
+2) Input the command "colcon build --symlink-install" to build the robot
+3) Launch RVIZ2 with the command "rviz2"
+4) In a new tab, launch Gazebo with command "ros2 launch articubot_one launch_sim.launch.py"
+5) In the RVIZ2 window, hit File->Open Config->config->drive_bot.rviz  (Note: Program is buggy and won't spawn the vehicle at times, if that's the case close and rerun RVIZ2)
+6) In a new tab, launch the keyboard control with command "ros2 run teleop_twist_keyboard teleop_twist_keyboard" (Must be on this tab when controlling the robot in order to make the robot move)
 
-It is recommended that you keep the repo/package name the same, but if you do change it, ensure you do a "Find all" using your IDE (or the built-in GitHub IDE by hitting the `.` key) and rename all instances of `my_bot` to whatever your project's name is.
-
-Note that each directory currently has at least one file in it to ensure that git tracks the files (and, consequently, that a fresh clone has direcctories present for CMake to find). These example files can be removed if required (and the directories can be removed if `CMakeLists.txt` is adjusted accordingly).
+REFERENCES:
+-Creating 3D model of a robot with URDF (https://youtu.be/BcjHyhV0kIs)
+-Importing/Driving robot in Gazebo (https://youtu.be/IjFcr5r0nMs)
+-Sensor/Driver Plugins (https://classic.gazebosim.org/tutorials?tut=ros_gzplugins)
