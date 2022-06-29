@@ -3,7 +3,7 @@ Must have ROS2 Foxy installed (Reference https://youtu.be/uWzOk0nkTcI)
 Must have Gazebo installed (Reference https://classic.gazebosim.org/tutorials?tut=install_ubuntu)
 
 Steps:
-1) Input the command "source install/setup.bash" in order to make the robot discoverable (Must be done for every terminal tab)
+1) Input the command "source install/setup.bash" in order to make the robot discoverable (Must be done for every new terminal tab)
 2) Input the command "colcon build --symlink-install" to build the robot
 3) Launch RVIZ2 with the command "rviz2"
 4) In a new tab, launch Gazebo with command "ros2 launch articubot_one launch_sim.launch.py"
