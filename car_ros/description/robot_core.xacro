@@ -3,6 +3,8 @@
 
     <xacro:include filename="inertial_macros.xacro"/>
 
+    <xacro:include filename="robot_camera.xacro"/>
+
     <material name="white">
         <color rgba="1 1 1 1" />
     </material>
@@ -22,6 +24,8 @@
     <material name="red">
         <color rgba="1 0 0 1"/>
     </material>
+
+    <xacro:property name="camera_link" value="0.05" />
 
     <!-- BASE LINK -->
 
@@ -187,5 +191,42 @@
         <mu1 value="0.018"/>
         <mu2 value="0.018"/>
     </gazebo>
+
+    <!-- CAMERA LINK -->
+    <joint name="camera_joint" type="fixed">
+        <axis xyz="0 1 0" />
+        <origin xyz="0.17 0 0.075" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="camera_link"/>
+    </joint>
+
+
+    <link name="camera_link">
+        <collision>
+            <origin xyz="0.09 0.05 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="${camera_link} ${camera_link} ${camera_link}"/>
+            </geometry>
+        </collision>
+
+        <visual>
+            <origin xyz="0.09 0.05 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="${camera_link} ${camera_link} ${camera_link}"/>
+            </geometry>
+            <material name="red"/>
+        </visual>
+
+        <inertial>
+            <mass value="1e-5" />
+            <origin xyz="0.09 0.05 0" rpy="0 0 0"/>
+            <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+        </inertial>
+    </link>
+
+    <gazebo reference="camera_link">
+        <material>Gazebo/Red</material>
+    </gazebo>
+
 
 </robot>
