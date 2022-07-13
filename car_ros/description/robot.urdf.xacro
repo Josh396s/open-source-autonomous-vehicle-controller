@@ -7,5 +7,7 @@
 
      <xacro:include filename="robot_camera.xacro"/>
 
+     <xacro:include filename="robot_lidar.xacro"/>
+
      
 </robot>

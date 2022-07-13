@@ -5,6 +5,9 @@
 
     <xacro:include filename="robot_camera.xacro"/>
 
+    <xacro:include filename="robot_lidar.xacro"/>
+
+
     <material name="white">
         <color rgba="1 1 1 1" />
     </material>
@@ -228,5 +231,42 @@
         <material>Gazebo/Red</material>
     </gazebo>
 
+
+
+
+    <!-- LIDAR LINK -->
+    <joint name="hokuyo_joint" type="fixed">
+        <axis xyz="0 1 0" />
+        <origin xyz="0 0 0.1143" rpy="0 0 0"/>
+        <parent link="base_link"/>
+        <child link="hokuyo_link"/>
+    </joint>
+
+    <!-- Hokuyo Laser -->
+    <link name="hokuyo_link">
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.02 0.02 0.01"/>
+            </geometry>
+        </collision>
+
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.02 0.02 0.01"/>
+            </geometry>
+        </visual>
+
+        <inertial>
+            <mass value="1e-5" />
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+        </inertial>
+    </link>
+
+    <gazebo reference="hokuyo_link">
+        <material>Gazebo/Orange</material>
+    </gazebo>
 
 </robot>
