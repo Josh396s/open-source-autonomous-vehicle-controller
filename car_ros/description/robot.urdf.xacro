@@ -9,5 +9,4 @@
 
      <xacro:include filename="robot_lidar.xacro"/>
 
-     
 </robot>

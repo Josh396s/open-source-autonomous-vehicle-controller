@@ -1,40 +1,59 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
    
-  <gazebo reference="hokuyo_link">
-        <sensor type="gpu_ray" name="head_hokuyo_sensor">
-            <pose>0 0 0 0 0 0</pose>
+    <joint name="laser_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="laser_frame"/>
+        <origin xyz = "0.08 0 0.1143" rpy="0 0 0"/>
+    </joint>
+
+    <link name = "laser_frame">
+        <visual>
+            <geometry>
+                <mesh filename="description/hokuyo.dae"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.1 0.1 0.1"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <mass value="1e-5" />
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+        </inertial>
+    </link>
+
+    <gazebo reference="laser_frame">
+        <sensor name="laser" type="ray">
+            <pose> 0 0 0 0 0 0 </pose>
             <visualize>true</visualize>
-            <update_rate>40</update_rate>
+            <update_rate>10</update_rate>
             <ray>
                 <scan>
                     <horizontal>
-                        <samples>720</samples>
+                        <samples>360</samples>
                         <resolution>1</resolution>
-                        <min_angle>-1.570796</min_angle>
-                        <max_angle>1.570796</max_angle>
+                        <min_angle>-3.14</min_angle>
+                        <max_angle>3.14</max_angle>
                     </horizontal>
                 </scan>
                 <range>
-                    <min>0.10</min>
-                    <max>30.0</max>
+                    <min>0.3</min>
+                    <max>12</max>
                     <resolution>0.01</resolution>
                 </range>
-                <noise>
-                    <type>gaussian</type>
-                    <!-- Noise parameters based on published spec for Hokuyo laser
-                        achieving "+-30mm" accuracy at range < 10m.  A mean of 0.0m and
-                        stddev of 0.01m will put 99.7% of samples within 0.03m of the true
-                        reading. -->
-                    <mean>0.0</mean>
-                    <stddev>0.01</stddev>
-                </noise>
             </ray>
-            <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_gpu_laser.so">
-                <topicName>lidar_info</topicName>
-                <frameName>hokuyo_link</frameName>
+            <plugin name="laser_controller" filename="libgazebo_ros_ray_sensor.so">
+                <ros>
+                    <argument>~/out:=scan</argument>
+                </ros>
+                <output_type>sensor_msgs/LaserScan</output_type>
+                <frame_name>laser_frame</frame_name>
             </plugin>
         </sensor>
-  </gazebo>
+    </gazebo>
 
 </robot>
