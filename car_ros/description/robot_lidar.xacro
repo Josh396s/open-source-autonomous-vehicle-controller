@@ -2,8 +2,8 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
    
     <joint name="laser_joint" type="fixed">
-        <origin xyz = "0 0 0.025" rpy="0 0 0"/>
-        <parent link="rotate_link"/>
+        <origin xyz = "-0.02 0 0.1143" rpy="0 0 0"/>
+        <parent link="base_link"/>
         <child link="laser_frame"/>
     </joint>
 
@@ -36,14 +36,14 @@
                 <scan>
                     <horizontal>
                         <samples>90</samples>
-                        <resolution>1</resolution>
-                        <min_angle>0</min_angle>
-                        <max_angle>0.01</max_angle>
+                        <resolution>10</resolution>
+                        <min_angle>-1.5708</min_angle>
+                        <max_angle>1.5708</max_angle>
                     </horizontal>
                 </scan>
                 <range>
                     <min>0.3</min>
-                    <max>12</max>
+                    <max>5</max>
                     <resolution>0.01</resolution>
                 </range>
             </ray>

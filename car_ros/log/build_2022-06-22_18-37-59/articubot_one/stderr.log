@@ -1,7 +1,0 @@
-CMake Error: The current CMakeCache.txt directory /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/build/articubot_one/CMakeCache.txt is different than the directory /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/articubot_one/build/articubot_one where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
-CMake Error at cmake_install.cmake:41 (include):
-  include could not find load file:
-
-    /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/articubot_one/build/articubot_one/ament_cmake_symlink_install/ament_cmake_symlink_install.cmake
-
-
