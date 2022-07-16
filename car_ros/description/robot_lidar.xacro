@@ -2,15 +2,16 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
    
     <joint name="laser_joint" type="fixed">
-        <parent link="chassis"/>
+        <origin xyz = "0 0 0.025" rpy="0 0 0"/>
+        <parent link="rotate_link"/>
         <child link="laser_frame"/>
-        <origin xyz = "0.08 0 0.1143" rpy="0 0 0"/>
     </joint>
 
     <link name = "laser_frame">
         <visual>
+            <origin xyz = "0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="description/hokuyo.dae"/>
+                <box size="0.06 0.05 0.05" />
             </geometry>
         </visual>
         <collision>
@@ -34,10 +35,10 @@
             <ray>
                 <scan>
                     <horizontal>
-                        <samples>360</samples>
+                        <samples>90</samples>
                         <resolution>1</resolution>
-                        <min_angle>-3.14</min_angle>
-                        <max_angle>3.14</max_angle>
+                        <min_angle>0</min_angle>
+                        <max_angle>0.01</max_angle>
                     </horizontal>
                 </scan>
                 <range>
