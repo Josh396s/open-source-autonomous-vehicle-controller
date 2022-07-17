@@ -1,9 +1,5 @@
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/config/drive_bot.rviz
-/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/config/test.world/model.sdf
-/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/config/test.world/test.world
-/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/config/view_bot.rviz
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/gazebo_control.xacro
-/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/hokuyo.dae
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/inertial_macros.xacro
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/robot.urdf.xacro
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/robot_camera.xacro
@@ -11,7 +7,8 @@
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/robot_lidar.xacro
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/launch/rsp.launch.py
-/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/worlds/empty.world
+/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/worlds/model.dae
+/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/worlds/model.dae:Zone.Identifier
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/worlds/obstacles.world
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one
 /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one
