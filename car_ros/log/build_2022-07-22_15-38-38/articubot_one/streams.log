@@ -1,0 +1,74 @@
+[0.017s] Invoking command in '/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one
+[0.403s] -- The C compiler identification is GNU 8.4.0
+[0.720s] -- The CXX compiler identification is GNU 8.4.0
+[0.852s] -- Check for working C compiler: /usr/bin/cc
+[0.981s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.982s] -- Detecting C compiler ABI info
+[1.110s] -- Detecting C compiler ABI info - done
+[1.118s] -- Detecting C compile features
+[1.118s] -- Detecting C compile features - done
+[1.121s] -- Check for working CXX compiler: /usr/bin/c++
+[1.233s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.234s] -- Detecting CXX compiler ABI info
+[1.344s] -- Detecting CXX compiler ABI info - done
+[1.352s] -- Detecting CXX compile features
+[1.352s] -- Detecting CXX compile features - done
+[1.356s] -- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)
+[1.376s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.376s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.501s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.530s] -- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)
+[1.608s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.661s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.661s] -- Configured cppcheck include dirs: 
+[1.661s] -- Configured cppcheck exclude dirs and/or files: 
+[1.678s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.678s] -- Configured cpplint exclude dirs and/or files: 
+[1.681s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.685s] -- Added test 'lint_cmake' to check CMake code style
+[1.688s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.705s] -- Added test 'uncrustify' to check C / C++ code style
+[1.705s] -- Configured uncrustify additional arguments: 
+[1.707s] -- Added test 'xmllint' to check XML markup files
+[1.710s] -- Configuring done
+[1.714s] -- Generating done
+[1.715s] -- Build files have been written to: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/build/articubot_one
+[1.718s] Invoked command in '/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one
+[1.720s] Invoking command in '/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/build/articubot_one -- -j12 -l12
+[1.744s] Invoked command in '/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/build/articubot_one -- -j12 -l12
+[1.763s] Invoking command in '/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/build/articubot_one
+[1.768s] -- Install configuration: ""
+[1.768s] -- Execute custom install script
+[1.769s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/config/drive_bot.rviz
+[1.769s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/gazebo_control.xacro
+[1.769s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/inertial_macros.xacro
+[1.769s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/robot.urdf.xacro
+[1.769s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/robot_camera.xacro
+[1.770s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/robot_core.xacro
+[1.770s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/description/robot_lidar.xacro
+[1.770s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/launch/launch_sim.launch.py
+[1.770s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/launch/rsp.launch.py
+[1.770s] -- Symlinking: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/worlds/blue_cone/model.config
+[1.776s] -- Symlinking: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/worlds/blue_cone/model.sdf
+[1.781s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/worlds/model.dae
+[1.782s] -- Symlinking: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/worlds/neon_cone/model.config
+[1.786s] -- Symlinking: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/worlds/neon_cone/model.sdf
+[1.791s] -- Symlinking: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/worlds/new.world
+[1.796s] -- Symlinking: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/worlds/orange_cone/model.config
+[1.801s] -- Symlinking: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/worlds/orange_cone/model.sdf
+[1.806s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/ament_index/resource_index/package_run_dependencies/articubot_one
+[1.806s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/ament_index/resource_index/parent_prefix_path/articubot_one
+[1.807s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/environment/ament_prefix_path.sh
+[1.807s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/environment/ament_prefix_path.dsv
+[1.807s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/environment/path.sh
+[1.807s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/environment/path.dsv
+[1.807s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/local_setup.bash
+[1.807s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/local_setup.sh
+[1.808s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/local_setup.zsh
+[1.808s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/local_setup.dsv
+[1.808s] -- Symlinking: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/package.dsv
+[1.813s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/ament_index/resource_index/packages/articubot_one
+[1.814s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig.cmake
+[1.814s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/cmake/articubot_oneConfig-version.cmake
+[1.814s] -- Up-to-date symlink: /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/install/articubot_one/share/articubot_one/package.xml
+[1.816s] Invoked command in '/home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/josh/robot_ws/src/open-source-autonomous-vehicle-controller/car_ros/build/articubot_one
