@@ -7,7 +7,7 @@ Steps:
 2) Input the command "colcon build --cmake-clean-cache --symlink-install" to build the robot 
 3) Launch RVIZ2 with the command "rviz2"
 4) In a new tab, change into the 'worlds' directory
-5) Launch Gazebo with command "ros2 launch articubot_one launch_sim.launch.py world:=new.world"
+5) Launch Gazebo with command "ros2 launch articubot_one launch_sim.launch.py world:=racetrack.world"
 6) In the RVIZ2 window, hit File->Open Config->config->drive_bot.rviz  (Note: Program is buggy and won't spawn the vehicle at times, if that's the case close and rerun RVIZ2)
 7) In a new tab, launch the keyboard control with command "ros2 run teleop_twist_keyboard teleop_twist_keyboard" (Must be on this tab when controlling the robot in order to make the robot move)
 
